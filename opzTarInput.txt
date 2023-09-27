@@ -1,0 +1,24 @@
+# use this tar command to create tar file from this list
+# tar zcvf opzPivkmConfFiles.tgz -T tarInput.txt
+# create list using awk
+# tar -tvf opzPivkmConfFiles.tgz |awk '{print $6}'
+# use vi to add leading /
+# :%s!^!/!
+
+/etc/postfix/main.cf
+/etc/postfix/sasl/sasl_passwd
+/etc/postfix/sasl/sasl_passwd.db
+/etc/wireguard/wg0.conf
+/etc/wireguard/wg-private.key
+/etc/wireguard/wg-public.key
+/etc/ssh/sshd_config.d/disable_root_login.conf
+/etc/sudoers.d/custom_commands
+/etc/kvmd/scripts/jiggler.sh
+/etc/kvmd/override.d/90-jiggler
+/home/greg/.ssh/authorized_keys
+/usr/bin/cloudflared
+/home/greg/tp15wake.sh
+/root/ip_addr_ck.sh
+/root/wg0HomeDisable.sh
+/root/update_pikvm_updater.sh
+/etc/sudoers.d/greg
