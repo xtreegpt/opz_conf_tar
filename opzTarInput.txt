@@ -4,6 +4,8 @@
 # tar -tvf opzPivkmConfFiles.tgz |awk '{print $6}'
 # use vi to add leading /
 # :%s!^!/!
+# to extract use
+# tar -C / zxvf <tar file> <file name> 
 
 /etc/postfix/main.cf
 /etc/postfix/sasl/sasl_passwd
